@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  /* background: linear-gradient(rgb(9, 9, 188), rgb(14, 14, 205)); */
+  background-color: blueviolet;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quiz-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slide-in 2s ease-in-out;
+  transition: 3s;
+}
+.container-1 {
+  padding: 5px;
+}
+.container-1 h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 6px;
+}
+.container-1 p {
+  text-align: center;
+  font-size: 14px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+form select {
+  width: 90%;
+  height: 40px;
+  border: none;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: rgba(138, 44, 226, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button {
+  width: 90%;
+  background-color: blueviolet;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container-2 {
+  padding: 5px;
+}
+.container-2 .head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+.container-2 .head span {
+  padding: 5px 10px;
+  background-color: rgba(138, 44, 226, 0.1);
+  border-radius: 5px;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question h4 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.question .options {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 11px;
+}
+/* .question .options input {
+  width: 120%;
+  border: none;
+  margin: 5px;
+  height: 40px;
+  padding: 0 10px;
+  background-color: rgba(138, 44, 226, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+} */
+.question button {
+  width: 90%;
+  background-color: blueviolet;
+  height: 40px;
+  border-radius: 5px;
+  margin: 15px 0 10px 0;
+  text-align: center;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.radio-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 320px;
+  height: 40px;
+  background-color: rgba(138, 44, 226, 0.1);
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+}
+.radio-con:hover {
+  background-color: rgba(138, 44, 226, 0.6);
+  color: white;
+}
+.radio-con input {
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  top: -130px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.check {
+  opacity: 0.5;
+}
+
+.container-3 {
+  padding: 5px;
+}
+.container-3 h1,
+.container-3 p {
+  text-align: center;
+}
+.container-3 p {
+  padding: 10px;
+}
+.container-3 p span {
+  font-weight: 700;
+}
+.container-3 button {
+  width: 100%;
+  background-color: blueviolet;
+  height: 40px;
+  border-radius: 5px;
+  margin: 15px 0 10px 0;
+  text-align: center;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.end-game {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.end-game:hover {
+  color: blueviolet;
+}
+.selected {
+  background-color: rgba(138, 44, 226, 0.6);
+  color: white;
+  font-weight: 700;
+}
+.correct {
+  border: 2px solid green;
+  background-color: rgba(138, 44, 226, 0.6);
+  color: white;
+}
+.incorrect {
+  border: 2px solid red;
+  background-color: rgba(138, 44, 226, 0.6);
+}
+.checked {
+  pointer-events: none;
+}
+
+@keyframes slide-in {
+  0% {
+    margin-top: 150vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}

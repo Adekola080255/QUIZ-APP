@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="container-1" id="container-1">
+        <h1>Welcome to the Quiz Board!!!</h1>
+        <p>Kindly fill in the following inputs.</p>
+
+        <form action="" id="form">
+          <select name="ques-no" id="ques-no">
+            <option selected disabled>Numbers of Questions</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+
+          <select name="ques-type" id="ques-type">
+            <option selected disabled>Question level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+
+          <button id="submiting">START QUIZ</button>
+        </form>
+      </div>
+
+      <div class="container-2 hide" id="container-2">
+        <div class="head">
+          <span
+            style="display: flex; justify-content: center; align-items: center"
+            class="question-number"
+            ><p style="font-size: 14px; font-weight: 700">1</p>
+            /10</span
+          >
+          <span class="count-down">00:00</span>
+        </div>
+        <div class="question">
+          <h4 class="question-holder">
+            Who is the President of the United Kingdom living in Russia?
+          </h4>
+          <div class="options"></div>
+          <button id="check" class="check">CHECK ANSWER</button>
+          <button id="next" class="hide">NEXT QUESTION</button>
+
+          <p class="end-game">END GAME</p>
+        </div>
+      </div>
+
+      <div class="container-3 hide" id="container-3">
+        <h1>NICE!!!</h1>
+        <p>
+          You got <span class="your-score">5</span> out of
+          <span class="total-score">10</span> Questions.
+        </p>
+        <p>Time-used: <span class="time-used">00:59</span></p>
+        <button id="play-again">PLAY AGAIN</button>
+      </div>
+    </div>
+
+    <script src="ndex.js"></script>
+  </body>
+</html>

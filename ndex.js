@@ -160,5 +160,5 @@ PlayAgain.addEventListener("click", () => {
 });
 
 EndGame.addEventListener("click", () => {
-  EndGame();
+  Endgame();
 });

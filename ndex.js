@@ -14,8 +14,7 @@ const ContainerOne = document.querySelector("#container-1"),
   TimeUsed = document.querySelector(".time-used"),
   YourScore = document.querySelector(".your-score"),
   TotalScore = document.querySelector(".total-score"),
-  PlayAgain = document.querySelector("#play-again"),
-  EndGame = document.querySelector(".end-game");
+  PlayAgain = document.querySelector("#play-again");
 
 const num = QuestionNumber.value;
 const type = QuestionType.value;
@@ -157,8 +156,4 @@ function Endgame() {
 
 PlayAgain.addEventListener("click", () => {
   window.location.reload();
-});
-
-EndGame.addEventListener("click", () => {
-  Endgame();
 });
